@@ -143,7 +143,7 @@
 
 .main {
   text-align: center;
-  background-image: url('./photos/csm_Gletscherfeeling_Moelltaler_0801_b5dd612600.jpg');
+  background-image: url('../photos/csm_Gletscherfeeling_Moelltaler_0801_b5dd612600.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -790,5 +790,6 @@ button.next { right: 10px; }
     flex: 1 1 100%;
   }
 }
+
 
 
