@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/style2.css">
   <link rel="stylesheet" href="../css/catalog.css">
+  <link rel="stylesheet" href="../css/stylee.css">
 </head>
 <body class="body">
 <article id="top"></article>
@@ -17,12 +18,16 @@
       <a class="nav-link" href="../pages/about2.html">About us</a>
       <a class="nav-link" href="../pages/contact2.html">Contact us</a>
       <a class="nav-link" href="../pages/catalog.html">Destinations</a>
-      <a class="nav-link" href="#">Your Shortlist</a>
+      <a class="nav-link" href="../pages/blog.html">Blog</a>
+      <a class="nav-link" href="../pages/shortlist.html">Your Shortlist</a>
+      <a class="nav-link" href="../pages/profile.html">Your profile</a>
     </nav>
-     <div class="profile"><a class="profile-home" href="profile.html">
-    <img src="../photos/user.png" alt="profile" class="home-profile-alt"></a></div>
+    <div class="profile">
+      <a class="profile-home" href="../pages/profile.html">
+        <img src="../photos/user.png" alt="profile" class="home-profile-alt">
+      </a>
+    </div>
   </header>
-
 <section class="container">
     <p class = 'product'>All Available Products</p>
 
@@ -111,5 +116,12 @@
     </div>
   </footer>
   <script src="../java/catalog.js"></script>
+    <script>
+    const savedAvatar = localStorage.getItem('avatar');
+    const profileIcon = document.querySelector('.home-profile-alt');
+    if (savedAvatar && profileIcon) {
+      profileIcon.src = savedAvatar;
+    }
+  </script>
 </body>
 </html>
